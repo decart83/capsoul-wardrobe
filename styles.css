@@ -1,0 +1,119 @@
+:root {
+  --blush: #e8b4b8;
+  --rose: #c98a90;
+  --coral: #f4a896;
+  --text-dark: #2c3e50;
+  --text-light: #6c757d;
+  --bg: #faf9f8;
+  --card: #ffffff;
+  --radius: 18px;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: linear-gradient(135deg, #faf9f8 0%, #f0e9e4 100%);
+  color: var(--text-dark);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 32px 20px 64px;
+}
+
+header.site {
+  text-align: center;
+  padding: 48px 20px 8px;
+}
+
+.mark {
+  width: 76px;
+  height: 76px;
+  border-radius: 20px;
+  margin: 0 auto 16px;
+  display: block;
+  box-shadow: var(--shadow);
+}
+
+h1.brand {
+  font-size: 2rem;
+  margin: 0;
+  font-weight: 700;
+}
+
+.tagline {
+  color: var(--text-light);
+  margin: 6px 0 0;
+}
+
+nav.legal {
+  text-align: center;
+  margin: 24px 0 8px;
+}
+
+nav.legal a {
+  color: var(--rose);
+  text-decoration: none;
+  font-weight: 600;
+  margin: 0 12px;
+}
+
+nav.legal a:hover { text-decoration: underline; }
+
+.card {
+  background: var(--card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 32px 28px;
+  margin-top: 24px;
+}
+
+h1 { font-size: 1.8rem; }
+h2 {
+  font-size: 1.2rem;
+  margin-top: 28px;
+  color: var(--text-dark);
+}
+
+.updated {
+  color: var(--text-light);
+  font-size: 0.9rem;
+  margin-top: 4px;
+}
+
+a { color: var(--rose); }
+
+ul { padding-left: 20px; }
+li { margin: 6px 0; }
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.feature {
+  background: var(--card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 20px;
+}
+
+.feature h3 { margin: 0 0 6px; font-size: 1.05rem; }
+.feature p { margin: 0; color: var(--text-light); font-size: 0.95rem; }
+
+footer.site {
+  text-align: center;
+  color: var(--text-light);
+  font-size: 0.85rem;
+  padding: 40px 20px;
+}
+
+footer.site a { color: var(--text-light); margin: 0 8px; }
