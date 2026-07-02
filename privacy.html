@@ -21,72 +21,127 @@
   <main class="wrap">
     <div class="card">
       <h1>Privacy Policy</h1>
-      <p class="updated">Last updated: June 14, 2026</p>
+      <p class="updated">Last updated: June 29, 2026</p>
 
       <p>This Privacy Policy explains how the <strong>Capsoul Wardrobe</strong> iOS app
       ("the app", "we", "us") handles your information. By using the app you agree to
       the practices described here.</p>
 
       <h2>1. Summary</h2>
-      <p>Capsoul Wardrobe is designed to keep your data on your device. We do not operate a
-      user account server, we do not run analytics or advertising, and we do not track
-      you across apps or websites. The one time your data leaves your device is when a
-      photo you choose is sent to Google's Gemini API to perform the color analysis you
-      requested.</p>
+      <p>Capsoul Wardrobe is designed to keep your data on your device. We operate no
+      servers, we do not run analytics or advertising, and we do not track you across
+      apps or websites. Color analysis runs on your device whenever possible. Data
+      leaves your device in only two cases, both with your explicit permission: an
+      inconclusive photo may be sent to Google's Gemini API to complete your color
+      analysis, and your style preferences are sent to Google's Gemini API to generate
+      wardrobe recommendations.</p>
 
       <h2>2. Information stored on your device</h2>
       <ul>
         <li><strong>Account identifier.</strong> If you choose Sign in with Apple, the
         app stores the anonymized Apple user identifier, and the name and email you
         approve, in your device's local storage. This is used only to label your data
-        and is never sent to a server we control. You may also use the app as a guest.</li>
-        <li><strong>Profile &amp; preferences.</strong> Age, height, footwear, and style
-        preferences you enter are saved on your device to personalize recommendations.</li>
+        and is never sent to any server. You may also use the app as a guest.</li>
+        <li><strong>Profile &amp; preferences.</strong> Age, height, footwear, style,
+        wardrobe values, and interests you enter are saved on your device to
+        personalize recommendations.</li>
         <li><strong>Analysis history.</strong> Your past results, a small photo
         thumbnail, and generated wardrobes are saved on your device so you can revisit
         them. You can delete any entry at any time inside the app.</li>
       </ul>
-      <p>This information is stored locally using Apple's on-device storage and is removed
-      if you delete the app.</p>
+      <p>This information is stored locally using Apple's on-device storage and is
+      removed if you delete your account in the app or delete the app.</p>
 
-      <h2>3. Photos and AI analysis</h2>
-      <p>When you ask for a color analysis, the photo you capture or select is
-      downscaled and sent over an encrypted connection to the
-      <strong>Google Gemini API</strong> for the sole purpose of determining your
-      seasonal color type and generating wardrobe suggestions. We do not store your
-      full-resolution photos on any server. Google processes the image to return a
-      result; please review
+      <h2>3. Face data</h2>
+      <p><strong>What face data the app collects.</strong> The app processes the photo
+      you take or select (an image that includes your face) and derives simple color
+      measurements from it: average skin, eye, and hair color values. The app uses
+      Apple's on-device face detection only to locate the regions of the photo to
+      sample colors from. The app does not create a faceprint, facial geometry map, or
+      any biometric identifier, and it cannot recognize or identify anyone.</p>
+      <p><strong>How face data is used.</strong> The photo and the color measurements
+      derived from it are used for exactly one purpose: determining your seasonal
+      color type (Spring, Summer, Autumn, or Winter) so the app can recommend colors
+      and clothing. Face data is never used for identification, authentication,
+      advertising, tracking, or model training.</p>
+      <p><strong>Sharing and storage.</strong> Face data is shared with one third
+      party in one situation only: if the on-device analysis is inconclusive, and you
+      have given explicit permission in the app, the photo is sent over an encrypted
+      connection to Google's Gemini API solely to complete the analysis. We operate no
+      servers, so no face data is ever stored on a server we control.</p>
+      <p><strong>Retention.</strong> During analysis the photo and derived color
+      measurements are processed in memory and are not retained by us. A small
+      thumbnail of your photo and the text results are saved only on your device with
+      your analysis history; they are deleted when you delete the analysis, delete
+      your account in the app, or delete the app. Google processes a photo sent to the
+      Gemini API in order to return the analysis result and handles it under
+      <a href="https://ai.google.dev/gemini-api/terms" target="_blank" rel="noopener">Google's
+      Gemini API terms</a>; we do not permit and do not use your photos to train any
+      model of ours.</p>
+
+      <h2>4. Photos, preferences, and AI analysis (Google Gemini)</h2>
+      <p>Color analysis runs on your device first. If, and only if, the on-device
+      result is inconclusive, the app asks to send the photo you chose — downscaled and
+      over an encrypted connection — to the <strong>Google Gemini API</strong> for the
+      sole purpose of determining your seasonal color type.</p>
+      <p>When you ask the app to build a capsule wardrobe, the app sends your style
+      details — your seasonal color result, age, height, footwear and style
+      preferences, wardrobe values, and interests — to the Google Gemini API to
+      generate the recommendations. Your photo, name, email, and Apple identifier are
+      never included in wardrobe requests.</p>
+      <p>Please review
       <a href="https://ai.google.dev/gemini-api/terms" target="_blank" rel="noopener">Google's
       Gemini API terms</a> and
       <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy
-      Policy</a> for how they handle data sent to their API. We do not use your photos to
-      train any model.</p>
+      Policy</a> for how Google handles data sent to its API.</p>
 
-      <h2>4. What we do not collect</h2>
+      <h2>5. Your consent, and how to withdraw it</h2>
+      <p>The app asks for your explicit permission before any data is shared with
+      Google Gemini. The first time you request an analysis, a permission screen
+      explains what may be shared (your photo if the on-device result is inconclusive,
+      and your style preferences for wardrobe generation), who it is shared with
+      (Google's Gemini API), and why. Nothing is sent unless you agree. You can
+      withdraw this permission at any time in <strong>Profile → Privacy → Withdraw AI
+      Permission</strong>; after withdrawal no data is shared, and the app will ask
+      again before your next analysis.</p>
+
+      <h2>6. What we do not collect</h2>
       <ul>
         <li>No advertising identifiers and no third-party advertising.</li>
         <li>No analytics or behavioral tracking SDKs.</li>
         <li>No location data.</li>
+        <li>No biometric identifiers, faceprints, or facial-geometry data.</li>
         <li>No selling or sharing of personal information.</li>
       </ul>
 
-      <h2>5. Children's privacy</h2>
+      <h2>7. Account and data deletion</h2>
+      <p>You can permanently delete your account and all associated data at any time
+      inside the app: <strong>Profile → Delete Account &amp; Data</strong>. This
+      permanently removes your profile, preferences, saved analyses, photo thumbnails,
+      and wardrobes from the device and signs you out. Because all Capsoul Wardrobe
+      data is stored only on your device, in-app deletion removes it completely —
+      there is no server copy anywhere. You can also delete individual analyses from
+      the My Colors screen, or remove everything by deleting the app.</p>
+
+      <h2>8. Children's privacy</h2>
       <p>Capsoul Wardrobe is not directed to children under 13, and we do not knowingly collect
       personal information from children.</p>
 
-      <h2>6. Your choices and rights</h2>
+      <h2>9. Your choices and rights</h2>
       <ul>
-        <li>Delete individual analyses from the My Colors screen, or remove all data by
-        deleting the app.</li>
+        <li>Decline or withdraw AI-processing permission (Profile → Privacy); the
+        on-device portions of the app keep working.</li>
+        <li>Delete individual analyses from the My Colors screen.</li>
+        <li>Delete your account and all data in the app (Profile → Delete Account &amp;
+        Data), or remove all data by deleting the app.</li>
         <li>Use the app as a guest without Sign in with Apple.</li>
-        <li>Stop sending photos to the AI by simply not running a new analysis.</li>
       </ul>
 
-      <h2>7. Changes to this policy</h2>
+      <h2>10. Changes to this policy</h2>
       <p>We may update this policy as the app evolves. Material changes will be reflected
       here with a new "Last updated" date.</p>
 
-      <h2>8. Contact</h2>
+      <h2>11. Contact</h2>
       <p>Questions about your privacy? Email
       <a href="mailto:decart83@gmail.com">decart83@gmail.com</a>.</p>
     </div>
